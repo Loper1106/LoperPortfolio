@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAlbany Statistics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!--Website Banner-->
+    <div id="title">
+        <img src="new_title.jpg" alt="UAlbany Statistics">
+    </div>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <!--Navigation Bar-->
+    <div id="nav">
+        <button id="darkMode" onclick="DarkMode()">Dark Mode</button>
+        <button class="navItem" onclick="location.href='pageGender.html'">Gender</button><!--
+    --><button class="navItem" onclick="location.href='pageEthnic.html'">Ethnicity</button><!--
+    --><button class="navItem" onclick="location.href='About.html'">About/Sources</button>
+    </div>
+    <div id="container">
+        <!--UAlbany Description (with list)-->
+        <div id="aboutMe">
+            <h3>About UAlbany:</h3>
+            <p>
+                <b>UAlbany</b> is an American University where many students come from across the United States, as well as
+                the world. These students come in order to study diverse subjects which range from:
+            </p>
+            <h3>How many different majors would you like to see?</h3>
+            <input type="number" id="numMajors" value="13">
+            <button onclick="generate()">Generate</button>
+            <ul id="listMajors">
+
+            </ul>
+            <p><br></p>
+            <!--Email UAlbany to apply for admission-->
+            <div id="email">
+            <p>To enroll now <a href="mailto:ugadmissions@albany.edu">Apply here!</a></p>
+            </div>
+        </div>
+        <div id="gpaCalc">
+            <h2>See if you qualify for admission!</h2>
+            <p>Enter your Hight School GPA and SAT Score</p>
+            <input type="number" id="gpa" value="0">
+            <p><br></p>
+            <input type="number" id="satScore" value="0">
+            <button onclick="calculate()">Calculate</button>
+            <p id="admissionResult"></p>
+        </div>
+        <!--Video Trailer of UAlbany campus-->
+        <div id="video">
+            <video width="320" height="240" controls>
+            <source src="trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        <p>Credit: </p><a href="https://www.youtube.com/watch?v=1mXOBDUDU70&t=53s" target="_blank">UAlbany</a>
+        </div>
+
+        <p><br></p>
+        <!--Credits-->
+        <div id="sources">
+            <h3><u>Sources:</u></h3>
+            <table>
+                <tr>
+                    <th>Albany: </th>
+                    <td><a href="https://www.albany.edu/admissions/who.php" target="_blank">https://www.albany.edu/admissions/who.php</a></td>
+                </tr>
+                <tr>
+                    <th>Google Charts Loader: </th>
+                    <td><a href="https://www.gstatic.com/charts/loader.js" target="_blank">https://www.gstatic.com/charts/loader.js</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    background-color: #141414;
+    color: white;
+    margin: 0%;
+}
+
+/*DESKTOP APPEARANCE*/
+@media only screen and (min-width: 575px){
+    .container{
+        margin-inline: auto;
+        width: 90%;
+    }
+    #table1{
+        background-color: #E6E6E6;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 0px 1px 1px;
+        align-self: auto;
+        height: 250px;
+    }
+    .table2{
+        background-color: #7E7E7E;
+        align-self: auto;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 0px 1px 0px;
+        text-align: center;
+        height: 250px;
+        width: 33%;
+    }
+    #table3{
+        background-color: #7E7E7E;
+        align-self: auto;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 1px 1px 0px;
+        text-align: center;
+        height: 250px;
+        width: 33%;
+    }
+    #email a{
+        position: absolute;
+        bottom:0;
+    }
+}
+/*MOBILE-TABLET APPEARANCE*/
+@media only screen and (max-width: 575px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    #tables{
+        flex-wrap: wrap;
+    }
+    #table1{
+        height: auto;
+        background-color: #E6E6E6;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        align-self: auto;
+        margin-bottom: 10px;
+    }
+    #table2{
+        background-color: #7E7E7E;
+        align-self: auto;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        text-align: center;
+        margin: 10px;
+    }
+    #table3{
+        background-color: #7E7E7E;
+        align-self: auto;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        text-align: center;
+        margin: 10px;
+    }
+    #email a{
+        position: absolute;
+        bottom:0;
+    }
+}
+
+#tables{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #BCDDB3;
+}
+
+#table1 a{
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    background-color: #BCDDB3;
+    border: 3px solid #2D2D24;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+#title h3{
+    color: black;
+}
+
+.container table{
+    width: 350px;
+    height: 250px;
+}
